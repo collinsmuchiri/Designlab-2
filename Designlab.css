@@ -10,7 +10,7 @@ scroll-behavior: smooth;}
     align-items: center;
     width: 100vw;
     height: 100vh;
-    margin-bottom: 80px;
+    margin-bottom: 25px;
 }
 
 .herocontent{
@@ -124,19 +124,39 @@ scroll-behavior: smooth;}
 .texts{
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    gap: 20px;}
+    gap: 40px;
+opacity: 0;
+    transform: translateY(200px) scale(0.5);
+
+    animation: fadeUp both;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1000ms;
+    animation-timeline: view();
+    animation-range: entry 30% cover 50%;}
+
+    @keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(200px) scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }}
     
 .welcom{
     color: #D5D5D5;
-    width: 30%;}
+    width: 5%;}
     
 .largetxt{
-color: #1E1E1E;
-font-family: "adogare", sans-serif;
-font-size: 65px;
-font-weight: 300;
-line-height: 80px;}
+    color: #1E1E1E;
+    font-family: "adogare", sans-serif;
+    font-size: 58px;
+    text-align: center;
+    font-weight: 300;
+    line-height: 80px;}
 
 .smalltxt{
 color: #4D545F;
@@ -144,13 +164,35 @@ font-family: "Space Grotesk";
 font-size: 17px;
 font-weight: 200;
 line-height: 20px;
-text-align: justify;}
+text-align: center;}
 
 .graphics{
-    width: 100%;}
+    width: 100%;
+
+    /*Preload Animation*/
+    opacity: 0;
+    transform: translateY(200px);
+    animation: fadeUp both;
+    animation-timing-function: ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 30% cover 40%;}
+
+    @keyframes fadeUp {
+    from {
+    opacity: 0;
+    transform: translateY(200px) scale(1);}
+    to {
+    opacity: 1;
+    transform: translateY(0);}}
 
 .graphics2{
-    width: 100%;}   
+    width: 100%;
+    opacity: 0;
+    transform: translateY(200px);
+    animation: fadeUp both;
+    animation-timing-function: ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 30% cover 40%;}   
 
 .servicessection{
     position: relative;
@@ -170,7 +212,23 @@ gap: 80px;}
     display: flex;
     justify-content: space-between;
     gap: 2%;
-    margin-bottom: 70px;}
+    margin-bottom: 70px;
+    
+    /*Preload Animation*/
+    opacity: 0;
+    transform: translateX(-200px);;
+    animation: Fromleft both;
+    animation-timing-function: ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 30% cover 40%;}
+
+    @keyframes Fromleft {
+    from {
+    opacity: 0;
+    transform: translateX(-200px) scale(0.5);}
+    to {
+    opacity: 1;
+    transform: translateX(0);}}
 
 .servicesimg{
     width: 60%;}
@@ -359,7 +417,26 @@ flex-shrink: 1 ;}
 font-family: "adogare", sans-serif;
 font-size: 65px;
 font-weight: 300;
-line-height: 80px;}
+text-align: center;
+line-height: 80px;
+opacity: 0;
+    transform: translateY(40px) scale(0.5);
+
+    animation: fadeUp both;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1000ms;
+    animation-timeline: view();
+    animation-range: entry 60% cover 70%;}
+
+    @keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px) scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }}
     
 .projectsection{
     position: relative;
@@ -400,6 +477,22 @@ line-height: 80px;}
     height: 100%;
     gap: 20px;
     margin-bottom: 50px;
+
+    /*Preload Animation*/
+    opacity: 0;
+    transform: translateY(200px) scale(0.5);
+    animation: Fromleft both;
+    animation-timing-function: ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 30% cover 40%;}
+
+    @keyframes Fromleft {
+    from {
+    opacity: 0;
+    transform: translateY(200px) scale(0.5);}
+    to {
+    opacity: 1;
+    transform: translateY(0) scale(1);}
 }
 
 .projectimg{
@@ -448,7 +541,14 @@ line-height: 80px;}
     align-items: center;
     width: 100vw;
     height: 200px;
-}
+    
+    /*Preload Animation*/
+    opacity: 0;
+    transform: translateY(200px) scale(0.5);
+    animation: Fromleft both;
+    animation-timing-function: ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 30% cover 40%;}
 
 .awardscontent{
     display: flex;
@@ -473,9 +573,24 @@ line-height: 80px;}
     display: flex;
     position: relative;
     width: 100vw;
-    height: 400px;
+    height: 350px;
     margin-top: 80px;
     background-color: #1e1e1e;
+     /*Preload Animation*/
+    opacity: 0;
+    transform: translateY(200px);
+    animation: fadeUp both;
+    animation-timing-function: ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 30% cover 40%;}
+
+    @keyframes fadeUp {
+    from {
+    opacity: 0;
+    transform: translateY(200px) scale(1);}
+    to {
+    opacity: 1;
+    transform: translateY(0);}
 }
 
 .footercontent{
@@ -586,7 +701,7 @@ line-height: 80px;}
             font-size: 20px;
             width: 55%;}
         .largetxt {
-            font-size: 50px;
+            font-size: 47px;
             line-height: 62px;}
             .hero{
             margin-bottom: 15px;}    
@@ -617,11 +732,7 @@ line-height: 80px;}
         .hero{
             margin-bottom: 50px;}
         .imaginecreatediv{
-            display: none;}
-        .floatingmacdiv{
-            width: 80vw;
-            right: 5vw;
-            bottom: 30vh;}  
+            display: none;} 
         .herocontent{
             justify-content: space-between;
             flex-direction: row-reverse;}
@@ -630,29 +741,145 @@ line-height: 80px;}
         .blankdiv{
             display: none;}
         .imaginecreatemobile{
-            height: 80vh;}
+            height: 75vh;}
         .imaginecreatemobilediv{
             align-self: flex-end;}
         .introsection{
             margin-bottom: 60px;}
         .welcom{
-            width: 70%;}       
-        .largetxt{
-            line-height: 45px;
-            font-size: 38px;}
-        .smalltxt{
-            text-align: left;}    
-        .graphics{
-            display: none;
-            width: 100%;}
+            width: 7%;}  }     
 
-        }
+    @media(width < 771px) and (width > 549px){
+        .floatingmacdiv{
+            right: 5vw;
+            bottom: 17vh;}
+        .floatingmac{
+            width: 484px;}}
+
+    @media(width < 550px) and (width > 424px){
+        .floatingmacdiv{
+            right: 5vw;
+            bottom: 25vh;}
+        .floatingmac{
+            width: 365px;}
+        .imaginecreatemobile {
+            height: 75vh;}}    
+
 
     @media(width > 770px){
+        .imaginecreatemobilediv{
+            display: none;}}
+
+    @media(width < 450px){
+        .floatingmacdiv {
+            bottom: 25vh;}
+        .floatingmac{
+            width: 365px;}
+        .graphics{
+            display: none;
+            width: 100%;}}
+        
+
+    @media(width > 450px){
         .graphics2{
             display: none;}
-        .imaginecreatemobilediv{
-            display: none;
-        }    
-        }
+    }
+    @media(width < 771px) and (width > 430px){
+        .hero {margin-bottom: 0px;}
+        .largetxt {
+            line-height: 50px;
+            font-size: 45px;}
+        .numberntext {
+            flex-direction: column;
+            align-items: flex-start;}
+        .servicetitle {
+            font-size: 23px;
+            line-height: 25px;}
+        .servicesinfo {  
+            font-size: 13px;
+            line-height: 15px;}
+        .textsection2 {
+            height: 134px;}
+        .text2 {
+            font-size: 38px;
+            line-height: 45px;
+        text-align: center;}
+        .projectsection {height: 870px;}
+        .contacts {
+            width: 100%;
+            font-size: 13px;}  }
+
+    @media(width < 431px) and (width > 319px){
+        .welcom {width: 20%;}
+    .largetxt{
+        font-size: 54px;
+        line-height: 48px;
+    }
+.brandidentity{
+    flex-direction: column;}
+.servicesimg{
+    width: 100%;
+}
+.numberntext{
+        align-items: flex-start;
+    gap: 30px}
+.brandidentity{
+        gap: 30px;}
+.servicesnumber{
+    width: 25%;}
+.servicetitle{
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+}   
+.servicesinfo {  
+        font-size: 13px;
+    line-height: 14px;
+    text-align: right;
+}   
+.servicestxt {
+    align-items: flex-end;
+
+}
+.textsection2{
+    height: auto;
+    margin-bottom: 70px;
+}
+.text2{
+     font-size: 54px;
+        line-height: 48px;
+}
+.projectcontent{
+    width: 100%;
+}
+.projectsection {
+    height: 1520px;
+    margin-bottom: 30px;
+}
+.projectinfo{
+    align-items: flex-end;
+}
+.tsh {
+        width: 105px;
+}
+.awardsection{
+    height: auto;
+}
+.footercontent{
+    gap: 50px;
+    height: auto;
+}
+.contacts{
+    flex-direction: column;
+        align-items: flex-start;
+    gap: 30px
+}
+.footer{
+        height: 570px;
+}
+.designlabfooter{
+    display: none;}
+.logosection {
+        width: 50%;
+}}
   
