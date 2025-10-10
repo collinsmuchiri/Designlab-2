@@ -189,6 +189,7 @@ text-align: center;}
     width: 100%;
     opacity: 0;
     transform: translateY(200px);
+    transform: scale(0.5);
     animation: fadeUp both;
     animation-timing-function: ease-in-out;
     animation-timeline: view();
@@ -197,10 +198,10 @@ text-align: center;}
     @keyframes fadeUp {
     from {
     opacity: 0;
-    transform: translateY(200px) scale(1);}
+    transform: translateY(200px) scale(0.5);}
     to {
     opacity: 1;
-    transform: translateY(0);}} }   
+    transform: translateY(0) scale(1);}} }   
 
 .servicessection{
     position: relative;
