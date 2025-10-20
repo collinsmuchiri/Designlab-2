@@ -68,7 +68,9 @@ scroll-behavior: smooth;}
 }
             
 .floatingmac{
-    width: 600px;}
+    width: 600px;
+    transform: translateY(70px);
+    opacity: 0;}
 
 .blankdiv{
     height: 30vh;
@@ -80,13 +82,22 @@ scroll-behavior: smooth;}
     justify-content: center;}
 
 .imaginecreate{
-    width: 100%;}  
+    width: 100%;
+    transform: translateY(40px);
+    opacity: 0;}
+    
+.imaginecreatemobile{
+    opacity: 0;
+    transform: translateY(40px);
+}    
 
 .scrolldiv{
     justify-self: center;}    
 
 .scroll{
-    height: 150px;}
+    height: 150px;
+    opacity: 0;
+    transform: translateY(-40px);}
 
 /*
 .imaginecreatemobilediv{
@@ -168,9 +179,11 @@ text-align: center;}
 
 .graphics{
     width: 100%;
+    transform: translateY(100px);
+    opacity: 0;
 
     /*Preload Animation*/
-    opacity: 0;
+    /*opacity: 0;
     transform: translateY(200px);
     animation: fadeUp both;
     animation-timing-function: ease-in-out;
@@ -183,7 +196,7 @@ text-align: center;}
     transform: translateY(200px) scale(1);}
     to {
     opacity: 1;
-    transform: translateY(0);}}
+    transform: translateY(0);}*/}
 
 .graphics2{
     width: 100%;
@@ -255,7 +268,10 @@ gap: 80px;}
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 10px;}
+    gap: 10px;
+    transform: translateY(100px);
+    opacity: 0;
+}
     
 .servicetitle{
     color: #000;
