@@ -15,8 +15,7 @@ gsap.to (".servicestxt", {
 
     scrollTrigger: {
         trigger: ".servicestxt",
-        start: "top 80%",
-    markers: true},
+        start: "top 80%"},
 
     opacity: 1,
     ease: "power3.inOut"}) 
@@ -27,8 +26,7 @@ gsap.to (".graphics", {
 
     scrollTrigger: {
         trigger: ".graphics",
-        start: "top 80%",
-    markers: true},
+        start: "top 80%"},
 
     opacity: 1,
     ease: "power3.inOut"})
@@ -39,8 +37,7 @@ gsap.to (".imaginecreate", {
 
     scrollTrigger: {
         trigger: ".imaginecreate",
-        start: "top 90%",
-    markers: true},
+        start: "top 90%"},
 
     opacity: 1,
     ease: "power3.inOut"})
@@ -51,8 +48,7 @@ gsap.to (".imaginecreatemobile", {
 
     scrollTrigger: {
         trigger: ".imaginecreatemobile",
-        start: "top 90%",
-    markers: true},
+        start: "top 90%"},
 
     opacity: 1,
     ease: "power3.inOut"})
@@ -64,8 +60,7 @@ gsap.to (".scroll", {
 
     scrollTrigger: {
         trigger: ".scroll",
-        start: "top 90%",
-    markers: true},
+        start: "top 90%"},
 
     opacity: 1,
     ease: "power3.inOut"})    
@@ -76,8 +71,8 @@ gsap.to (".floatingmac", {
 
     scrollTrigger: {
         trigger: ".floatingmac",
-        start: "top 90%",
-    markers: true},
+        start: "top 90%"},
 
     opacity: 1,
     ease: "power3.inOut"})
+
