@@ -16,6 +16,16 @@ smoother.effects(".largetxt, .brandidentity, .text2",{
 });    
 
 // ANIMATIONS
+    gsap.to(".texts", {
+      y: 0,
+      duration: 2,
+      scrollTrigger: {
+        trigger: ".texts",
+        start: "top 80%"},
+      opacity: 1,
+      ease: "power3.inOut"
+    });
+
     gsap.to(".welcom", {
       rotation: 360,
       duration: 4,
@@ -107,4 +117,5 @@ smoother.effects(".largetxt, .brandidentity, .text2",{
 
     // refresh after setup
     ScrollTrigger.refresh();
+
 
