@@ -28,9 +28,7 @@ smoother.effects(".largetxt, .brandidentity, .text2",{
       duration: 2,
       scrollTrigger: {
         trigger: ".servicestxt",
-        start: "top 80%",
-        markers: true
-      },
+        start: "top 80%"},
       opacity: 1,
       ease: "power3.inOut"
     });
@@ -40,9 +38,7 @@ smoother.effects(".largetxt, .brandidentity, .text2",{
       duration: 2,
       scrollTrigger: {
         trigger: ".graphics",
-        start: "top 80%",
-        markers: true
-      },
+        start: "top 80%"},
       opacity: 1,
       ease: "power3.inOut"
     });
@@ -52,9 +48,7 @@ smoother.effects(".largetxt, .brandidentity, .text2",{
       duration: 2.5,
       scrollTrigger: {
         trigger: ".imaginecreate",
-        start: "top 90%",
-        markers: true
-      },
+        start: "top 90%"},
       opacity: 1,
       ease: "power3.inOut"
     });
@@ -64,9 +58,7 @@ smoother.effects(".largetxt, .brandidentity, .text2",{
       duration: 2.5,
       scrollTrigger: {
         trigger: ".imaginecreatemobile",
-        start: "top 90%",
-        markers: true
-      },
+        start: "top 90%"},
       opacity: 1,
       ease: "power3.inOut"
     });
@@ -77,9 +69,7 @@ smoother.effects(".largetxt, .brandidentity, .text2",{
       repeat: -1,
       scrollTrigger: {
         trigger: ".scroll",
-        start: "top 90%",
-        markers: true
-      },
+        start: "top 90%"},
       opacity: 1,
       ease: "power3.inOut"
     });
@@ -89,9 +79,7 @@ smoother.effects(".largetxt, .brandidentity, .text2",{
       duration: 2,
       scrollTrigger: {
         trigger: ".floatingmac",
-        start: "top 90%",
-        markers: true
-      },
+        start: "top 90%"},
       opacity: 1,
       ease: "power3.inOut"
     });
@@ -104,20 +92,19 @@ smoother.effects(".largetxt, .brandidentity, .text2",{
       
       scrollTrigger: {
         trigger: ".ourwork",
-        start: "top 80%",
-        markers: true},});
+        start: "top 80%"},
+    });
 
     gsap.to(".servicestxt", {
       y: 0,
       duration: 2,
       scrollTrigger: {
         trigger: ".servicestxt",
-        start: "top 80%",
-        markers: true
-      },
+        start: "top 80%"},
       opacity: 1,
       ease: "power3.inOut"
     });
 
     // refresh after setup
     ScrollTrigger.refresh();
+
