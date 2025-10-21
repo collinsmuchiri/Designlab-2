@@ -142,6 +142,8 @@ height: 100%;}
     align-items: center;
     justify-content: space-between;
     gap: 40px;
+    transform: translateY(100px);
+    opacity: 0;
 }
     
 .welcom{
