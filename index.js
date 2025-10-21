@@ -6,7 +6,8 @@
       wrapper: "#smooth-wrapper",
       content: "#smooth-content",
       smooth: 1.5,
-      effects: true
+      effects: true,
+      smoothTouch: 0.3
     });
 
 //LAG
@@ -34,7 +35,7 @@ smoother.effects(".largetxt, .brandidentity, .text2",{
       ease: "power3.inOut"
     });
 
-    gsap.to(".graphics", {
+    gsap.to(".graphics, .graphix2", {
       y: 0,
       duration: 2,
       scrollTrigger: {
