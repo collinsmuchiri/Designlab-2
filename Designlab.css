@@ -1,3 +1,15 @@
+/*VARIABLES*/
+:fontstyles {
+--descriptive: font-family: "Outfit", sans-serif;
+--fontweight-light: font-weight: 200;
+--fontweight-medium: font-weight: 400;
+}
+
+.navlink, .servicesinfo, .projtitle, .servicetitle, .projdescription, .projectbutton, .top, .bottom, .contactb{
+    font-family: "Outfit", sans-serif;
+    font-weight: 200;
+}
+
 body{
     margin: 0px;
     background-color: #ECEBEB;
@@ -60,9 +72,9 @@ height: 100%;}
     border-radius: 20px;}
 
 .navlink{
-    font-family: "Space Grotesk", sans-serif;
     font-size: 11px;
-    color: #453614;}
+    color: #453614;
+    font-weight: 600;}
 
 .floatingmacdiv{
     position: absolute;
@@ -204,22 +216,24 @@ text-align: center;}
     width: 90vw;
     display: flex;
     flex-direction: column;
-justify-content: space-between;
-gap: 80px;}
+    justify-content: space-between;
+    gap: 40px;}
 
 .brandidentity{
     display: flex;
     justify-content: space-between;
-    gap: 2%;
+    gap: 7%;
     margin-bottom: 70px;}
 
-.servicesimg{
-    width: 60%;}
+.servicesimg1, .servicesimg2, .servicesimg3{
+    width: 60%;
+    border-radius: 5px;}
     
 .numberntext{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    gap: 15%;
 }    
 
 .servicesnumber{
@@ -233,24 +247,22 @@ gap: 80px;}
     gap: 10px;
     transform: translateY(100px);
     opacity: 0;
+    width: 100%;
 }
 
 .servicesinfo{
-    color: #6e6e6e;
-font-family: "Space Grotesk";
-font-size: 15px;
-font-style: normal;
-font-weight: 350;
-line-height: 18px;
+color: #6e6e6e;
+font-size: 13px;
+line-height: 15px;
+text-align: left;
 }
 
     
 .textsection2{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    align-items: center;
+    gap: 40px;
     position: relative;
     width: 100vw;
     height: 400px;}
@@ -258,11 +270,11 @@ line-height: 18px;
 .text2{
     width: 90vw;
     color: #1E1E1E;
-font-family: "adogare", sans-serif;
-font-size: 65px;
-font-weight: 300;
-text-align: center;
-line-height: 80px;}
+    font-family: "adogare", sans-serif;
+    font-size: 65px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 80px;}
     
 .projectsection{
     position: relative;
@@ -310,25 +322,27 @@ line-height: 80px;}
     background-color: blue;
     width: 100%;
 }
+
+.projblock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .projectinfo{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    height: 26%;}
+    justify-content: space-between;}
 
 .projtitle, .servicetitle{
-    font-family: "Space Grotesk", sans-serif;
     font-size: 17px;
     line-height: 20px;
-    font-weight: 400;
+  font-weight: 600;
     color: #1e1e1e;}
     
 .projdescription{
-    font-family: "Space Grotesk", sans-serif;
     font-size: 13px;
     font-weight: 300;
-    line-height: 17px;
+    line-height: 15px;
     color: #6e6e6e;
 
 }
@@ -340,10 +354,10 @@ line-height: 80px;}
     color: #858585;
     width: 120px;
     height: 30px;
-    font-family: "Space Grotesk", sans-serif;
     font-size: 13px;
     font-weight: 300;
     margin-top: 15px;
+    cursor: pointer;
 }
 
 .awardsection{
@@ -407,21 +421,17 @@ line-height: 80px;}
     justify-content: space-between;}
     
 .top{
-    color: #858585;
-    font-family: "Space Grotesk", sans-serif;
     font-size: 16px;
-    font-weight: 300;}
+    font-weight: 600;
+    color: #858585;
+    }
     
 .bottom{
-    font-family: "Space Grotesk", sans-serif;
     font-size: 16px;
-    font-weight: 300;
     color: #ECEBEB;}   
     
 .contactb{
-    font-family: "Space Grotesk", sans-serif;
     font-size: 16px;
-    font-weight: 300;
     color: #ECEBEB;}    
 
 .designlabnlogo{
@@ -476,6 +486,14 @@ line-height: 80px;}
         line-height: 40px;}
     .tsh {width: 150px;}}*/
 
+    @media (width > 1025px){
+        .largetxt{
+            line-height: 60px;
+        }
+        .brandidentity{
+            gap: 7%;
+        }
+    }
     @media (width > 770px) and (width < 2560px){
         .smalltxt {
             font-size: 23px;
@@ -490,7 +508,7 @@ line-height: 80px;}
     @media (width > 1024px) and (width < 1200px){
         .largetxt {
             font-size: 50px;
-            line-height: 62px;}
+            line-height: 60px;}
         .servicesinfo{
             font-size: 13px;
             line-height: 16px;}
@@ -528,8 +546,10 @@ line-height: 80px;}
         .projectsection{
             height: 975px;}
         .servicetitle{
-            font-size: 22px;
-            line-height: 23px;
+            font-size: 18px;
+            line-height: 20px;}
+        .brandidentity{
+            gap: 14%;
         }}
         
     @media(width < 771px){
@@ -558,7 +578,7 @@ line-height: 80px;}
             right: 5vw;
             bottom: 17vh;}
         .floatingmac{
-            width: 484px;}}
+            width: 415px;}}
 
     @media(width < 550px) and (width > 424px){
         .floatingmacdiv{
@@ -596,18 +616,27 @@ line-height: 80px;}
             flex-direction: column;
             align-items: flex-start;}
         .servicetitle {
-            font-size: 23px;
-            line-height: 25px;}
+        font-size: 13px;
+        line-height: 15px;}
+        .brandidentity{
+            gap: 12%;
+        }
         .servicesinfo {  
-            font-size: 13px;
-            line-height: 15px;}
+            font-size: 11px;
+        line-height: 13px;}
         .textsection2 {
-            height: 134px;}
+            height: 134px;
+            margin-bottom: 40px;}
         .text2 {
             font-size: 38px;
             line-height: 45px;
         text-align: center;}
         .projectsection {height: 870px;}
+        .projtitle{
+            font-size: 13px;
+        }
+        .projdescription {
+    font-size: 11px;}
         .contacts {
             width: 100%;
             font-size: 13px;}  }
@@ -620,19 +649,20 @@ line-height: 80px;}
     }
 .brandidentity{
     flex-direction: column;}
-.servicesimg{
+.servicesimg1, .servicesimg2, .servicesimg3{
     width: 100%;
 }
 .numberntext{
-        align-items: flex-start;
-    gap: 30px}
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20%;}
 .brandidentity{
         gap: 30px;}
 .servicesnumber{
     width: 25%;}
 .servicetitle{
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 15px;
+    line-height: 15px;
     text-align: right;
 }   
 .servicesinfo {  
@@ -660,7 +690,10 @@ line-height: 80px;}
     margin-bottom: 30px;
 }
 .projectinfo{
-    align-items: flex-end;
+    align-items: flex-start;
+}
+.projtitle{
+    font-size: 15px;
 }
 .tsh {
         width: 105px;
