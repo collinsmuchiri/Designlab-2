@@ -7,17 +7,14 @@
   <link rel="stylesheet" href="Designlab.css" />
   <link href="https://fonts.cdnfonts.com/css/adogare" rel="stylesheet" />
   <link href="https://fonts.cdnfonts.com/css/qasbyne" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="/Images/designlab-favicon.ico" />
 </head>
 <body>
 
-  <div id="smooth-wrapper">
-    <div id="smooth-content">
-
-      <div class="topsection">
+  <div class="topsection">
         <img class="logo" src="/Images/Logo.png" alt="logo">
         <nav class="navbar">
           <p class="navlink">Projects</p>
@@ -27,6 +24,9 @@
           <p class="navlink">Contact</p>
         </nav>
       </div>
+
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
 
       <section class="hero">
         <div class="herocontent">
@@ -56,44 +56,44 @@
             <img class="welcom" src="/Images/welcome2.png" alt="welcome">
             <div class="largetxt">We Craft Beautiful<br>Websites & Put Brands<br>on the Map.</div>
           </div>
-          <img class="graphics" src="/Images/graphics.webp">
-          <img class="graphix2" src="/images/graphix2.webp">
+          <img class="graphics" src="/Images/graphics.webp" alt="graphics">
+          <img class="graphix2" src="/images/graphix2.webp" alt="graphics2">
         </div>
       </div>
 
       <div class="servicessection">
         <div class="servicescontent">
-          <img class="servicestxt" src="/Images/services.png" alt="services heading">
+          <div class="ourwork">What We Do</div>
           <div class="servicecardsection">
             <div class="brandidentity">
-              <img class="servicesimg" src="/Images/branding.gif" alt="branding">
+              <video class="servicesimg1" src="/Images/glvvid.mp4" autoplay loop muted playsinline onerror="this.onerror=null; this.src='/Images/alt1.webp';"></video>
               <div class="numberntext">
                 <img class="servicesnumber" src="/Images/one.png" alt="one">
                 <div class="servicestxt">
-                  <div class="servicetitle">Brand<br>Identity</div>
-                  <div class="servicesinfo">Cohesive visual and strategic<br>branding, from logos to messaging<br>,capturing your brand's essence.</div>
+                  <div class="servicetitle">Handcrafted<br>Web Development</div>
+                  <div class="servicesinfo">Unique, custom, & user focused websites tailored to reflect your brand's personality and goals.</div>
                 </div>
               </div>
             </div>
 
             <div class="brandidentity">
-              <video class="servicesimg" src="Images/paxvid.mp4" autoplay loop muted playsinline></video>
+              <img class="servicesimg2" src="/Images/branding.gif" onerror="this.onerror=null; this.src='/Images/alt3.webp';">
               <div class="numberntext">
                 <img class="servicesnumber" src="/Images/two.png" alt="two">
                 <div class="servicestxt">
-                  <div class="servicetitle">Handcrafted<br>Web Development</div>
-                  <div class="servicesinfo">Unique, custom, & user focused<br>websites tailored to reflect your<br>brand's personality and goals.</div>
+                  <div class="servicetitle">Premium<br>Visual Branding</div>
+                  <div class="servicesinfo">Cohesive visual and strategic branding, from logos to messaging,capturing your brand's essence.</div>
                 </div>
               </div>
             </div>
 
             <div class="brandidentity">
-              <img class="servicesimg" src="/Images/ecommerce.gif" alt="ecommerce">
+              <img class="servicesimg3" src="/Images/ecommerce.gif" onerror="this.onerror=null; this.src='/Images/alt3.webp';">
               <div class="numberntext">
                 <img class="servicesnumber" src="/Images/three.png" alt="three">
                 <div class="servicestxt">
-                  <div class="servicetitle">Custom<br>Ecommerce</div>
-                  <div class="servicesinfo">Fully personalized online stores<br>built for seamless shopping<br>experiences and scalable growth.</div>
+                  <div class="servicetitle">Custom-Built<br>Ecommerce</div>
+                  <div class="servicesinfo">Fully personalized online stores built for seamless shopping experiences and scalable growth.</div>
                 </div>
               </div>
             </div>
@@ -103,7 +103,8 @@
       </div>
 
       <div class="textsection2">
-        <div class="text2">We make Complex<br>Userflows Simple &<br>User Centric</div>
+        <img class="welcom" src="/Images/welcome2.png" alt="welcome">
+        <div class="text2">Less is More.<br>Make your interface<br>Simple & User Centric</div>
       </div>
 
       <div class="projectsection">
@@ -112,36 +113,48 @@
           <div class="projectcontainer">
             <div class="projectcontent">
               <video class="projectimg" src="Images/kwetuvid.mp4" autoplay loop muted playsinline></video>
-              <div class="projectinfo">
-                <div class="projtitle">Kwetu by Hilton</div>
-                <div class="projdescription">Custom Web Development</div>
-                <button class="projectbutton">View Project</button>
+              <div class="projblock">
+                <div class="projectinfo">
+                  <div class="projtitle">Kwetu by Hilton</div>
+                  <div class="projdescription">Custom Web Development</div>
+                </div>
+                <button class="projectbutton" onclick="
+                  if (window.innerWidth > 430) {
+                  window.open('https://www.figma.com/proto/GYncFibyMMonVopUZW3CsF/Kwetu-by-Hilton-UI-V6?page-id=0%3A1&node-id=218-3598&p=f&viewport=351%2C665%2C0.02&t=huO1iHl3Btas6tix-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=218%3A3598&hide-ui=1', '_blank');}
+                  else {
+                  window.open('https://www.figma.com/proto/ZtBBQNK2nplFXFFVR0Cf6s/Kwetu-Mobile-UI?page-id=0%3A1&node-id=1-2&p=f&viewport=330%2C250%2C0.02&t=XKnvzK6aOE8G9VsS-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2&show-proto-sidebar=1', '_blank');}">View Project</button>
               </div>
             </div>
 
             <div class="projectcontent">
               <video class="projectimg" src="Images/paxvid.mp4" autoplay loop muted playsinline></video>
-              <div class="projectinfo">
-                <div class="projtitle">Pax Manor Muthaiga</div>
-                <div class="projdescription">Custom Web Development</div>
+              <div class="projblock">
+                <div class="projectinfo">
+                  <div class="projtitle">Pax Manor Muthaiga</div>
+                  <div class="projdescription">Custom Web Development</div>
+                </div>
                 <button class="projectbutton">View Project</button>
               </div>
             </div>
 
             <div class="projectcontent">
               <video class="projectimg" src="Images/glvvid.mp4" autoplay loop muted playsinline></video>
-              <div class="projectinfo">
-                <div class="projtitle">Gigiri Lion Villas</div>
-                <div class="projdescription">Custom Web Development</div>
+              <div class="projblock">
+                <div class="projectinfo">
+                  <div class="projtitle">Gigiri Lion Villas</div>
+                  <div class="projdescription">Custom Web Development</div>
+                </div>
                 <button class="projectbutton">View Project</button>
               </div>
             </div>
 
             <div class="projectcontent">
               <video class="projectimg" src="Images/glvvid.mp4" autoplay loop muted playsinline></video>
-              <div class="projectinfo">
-                <div class="projtitle">Gigiri Lion Villas</div>
-                <div class="projdescription">Custom Web Development</div>
+              <div class="projblock">
+                <div class="projectinfo">
+                  <div class="projtitle">Gigiri Lion Villas</div>
+                  <div class="projdescription">Custom Web Development</div>
+                </div>
                 <button class="projectbutton">View Project</button>
               </div>
             </div>
@@ -173,9 +186,9 @@
             </div>
             <div class="contacta">
               <div class="top">Shoot an Enquiry</div>
-              <div class="bottom">create@designlab.com</div>
+              <div class="bottom">create@designlabstudio.co</div>
             </div>
-            <div class="contactb">Designlab 2024. All rights reserved</div>
+            <div class="contactb">Designlab 2025. All rights reserved</div>
           </div>
           <div class="designlabnlogo">
             <img class="designlabfooter" src="/Images/DESIGNLAB.svg" alt="designlab">
