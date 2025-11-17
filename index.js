@@ -15,6 +15,7 @@ smoother.effects(".largetxt, .brandidentity, .textsection2",{
   lag: 0.3
 });    
 
+
 // ANIMATIONS
     gsap.to(".welcom", {
       rotation: 360,
