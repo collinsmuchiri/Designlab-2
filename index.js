@@ -1,6 +1,14 @@
 // REGISTER PLUGINS
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
+//CONTINUOUSFLOW
+gsap.to(".awards-track", {
+  xPercent: -50,        // moves exactly half (the duplicated set)
+  duration: 40,         // speed — lower = faster
+  ease: "none",         // constant speed, no easing
+  repeat: -1            // infinite loop
+}); 
+
 //SCROLL SMOOTHER
     const smoother = ScrollSmoother.create({
       wrapper: "#smooth-wrapper",
@@ -32,7 +40,7 @@ smoother.effects(".largetxt, .brandidentity, .textsection2",{
         start: "top 80%"
       },
       opacity: 1,
-      ease: "power3.inOut"
+      ease: "power3.inOut" 
     });
 
 
